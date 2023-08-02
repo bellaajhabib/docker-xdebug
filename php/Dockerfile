@@ -1,7 +1,7 @@
-FROM php:7.4-apache
+FROM php:8.0-apache
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
-      && pecl install xdebug-2.9.2 \
+      && pecl install xdebug-3.2.1 \
       && docker-php-ext-enable xdebug\
     &&  apt-get update \
     &&  apt-get install -y --no-install-recommends \
@@ -16,7 +16,7 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf \
 \
     &&  curl -sS https://get.symfony.com/cli/installer | bash \
     &&  mv /root/.symfony5/bin/symfony /usr/local/bin \
-\ 
+\
     &&  docker-php-ext-configure \
             intl \
     &&  docker-php-ext-install \

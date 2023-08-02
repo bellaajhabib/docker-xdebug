@@ -143,6 +143,7 @@
       <path value="$PROJECT_DIR$/project/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/project/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/project/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/project/vendor/symfony/proxy-manager-bridge" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
